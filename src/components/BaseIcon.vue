@@ -23,27 +23,16 @@ export default {
   }
 }
 </script>
-<<<<<<< HEAD
     
-=======
-
->>>>>>> master
 <style scoped>
 .icon-wrapper {
   display: inline-flex;
   align-items: center;
-<<<<<<< HEAD
   color: rgba(0, 0, 0, 0.4);
-=======
->>>>>>> master
   font-size: 1rem;
   font-weight: 600;
 }
 .icon {
-<<<<<<< HEAD
-=======
-  color: rgba(0, 0, 0, 0.4);
->>>>>>> master
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;

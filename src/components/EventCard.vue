@@ -3,11 +3,7 @@
     <div class="event-card -shadow">
       <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
       <h4 class="title">{{ event.title }}</h4>
-<<<<<<< HEAD
       <BaseIcon name="users">{{ event.attendees.length }} attending</BaseIcon>
-=======
-      <BaseIcon name="users">{{ event.attendees }} attending</BaseIcon>
->>>>>>> master
     </div>
   </router-link>
 </template>
