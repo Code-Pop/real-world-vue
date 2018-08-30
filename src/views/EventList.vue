@@ -18,7 +18,7 @@ export default {
       events: []
     }
   },
-  mounted() {
+  created() {
     EventService.getEvents()
       .then(response => {
         this.events = response.data

@@ -31,10 +31,10 @@ export default {
   props: ['id'],
   data() {
     return {
-      event: []
+      event: {}
     }
   },
-  mounted() {
+  created() {
     EventService.getEvent(this.id)
       .then(response => {
         this.event = response.data
