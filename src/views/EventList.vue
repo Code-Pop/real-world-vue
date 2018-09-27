@@ -19,6 +19,7 @@ export default {
     }
   },
   created() {
+    // this.$store.dispatch('fetchEvents')
     EventService.getEvents()
       .then(response => {
         this.events = response.data
@@ -27,6 +28,11 @@ export default {
         console.log('There was an error:', error.response)
       })
   }
+  // computed: {
+  //   events() {
+  //     return this.$store.state.events
+  //   }
+  // }
 }
 </script>
 

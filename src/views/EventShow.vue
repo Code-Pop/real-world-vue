@@ -35,6 +35,7 @@ export default {
     }
   },
   created() {
+    // this.$store.dispatch('fetchEvents')
     EventService.getEvent(this.id)
       .then(response => {
         this.event = response.data

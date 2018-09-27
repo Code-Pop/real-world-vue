@@ -15,5 +15,9 @@ export default {
   },
   getEvent(id) {
     return apiClient.get('/events/' + id)
+  },
+  // show adding this
+  postEvent(event) {
+    return apiClient.post('/events', event)
   }
 }
