@@ -16,18 +16,19 @@ export default new Vuex.Store({
       'food',
       'community'
     ],
-    events: []
+    events: [],
     // For next lesson:
     // event: {}
     // Basic example:
-    // count: 0
+    count: 0
   },
   mutations: {
     ADD_EVENT(state, event) {
       state.events.push(event)
     },
     INCREMENT_COUNT(state, value) {
-      state.count += value
+      console.log('value:', value)
+      state.count += 1
     }
     // For next lesson:
     // SET_EVENTS(state, events) {

@@ -44,9 +44,11 @@
 
       <input type="submit" class="button -fill-gradient" value="Submit"/>
     </form>
-      <!-- Basic example:
-        <input type="number" v-model.number="value">
-      <button @click="incrementCount">Increment</button> -->
+
+      <input type="number" v-model.number="incrementBy">
+      <button @click="incrementCount">
+        Increment
+      </button>
   </div>
 </template>
 
@@ -65,23 +67,23 @@ export default {
     return {
       event: this.createFreshEventObject(),
       categories: this.$store.state.categories,
-      times
+      times,
       // Basic example:
-      // incrementBy: 1
+      incrementBy: 1
     }
   },
   methods: {
-    // Basic example:
-    // incrementCount() {
-    //   this.$store.dispatch('updateCount', this.value)
-    // },
+    incrementCount() {
+      this.$store.commit('INCREMENT_COUNT', this.incrementBy)
+    },
     createEvent() {
       this.$store
         .dispatch('createEvent', this.event)
+        // do I pass in event here?
         .then(() => {
           this.$router.push({
             name: 'event-show',
-            params: { id: this.event.id }
+            params: { id: event.id }
           })
           this.event = this.createFreshEventObject()
         })
