@@ -28,7 +28,7 @@ export default new Vuex.Store({
     },
     INCREMENT_COUNT(state, value) {
       console.log('value:', value)
-      state.count += 1
+      state.count += value
     }
     // For next lesson:
     // SET_EVENTS(state, events) {
