@@ -99,4 +99,7 @@ export default {
 </script>
 
 <style scoped>
+.field {
+  margin-bottom: 24px;
+}
 </style>
