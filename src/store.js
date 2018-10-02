@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import EventService from '@/services.EventService.js'
 
 Vue.use(Vuex)
 

@@ -46,6 +46,7 @@
 
 <script>
 import Datepicker from 'vuejs-datepicker'
+
 export default {
   components: {
     Datepicker
@@ -71,7 +72,6 @@ export default {
             params: { id: this.event.id }
           })
           this.event = this.createFreshEventObject()
-          console.log('I was ran')
         })
         .catch(() => {
           console.log('There was a problem creating your event')
