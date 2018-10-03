@@ -23,8 +23,8 @@ export default {
     EventCard
   },
   created() {
-    this.perPage = 3 // Setting perPage here and not in data means it won't be reactive
-    // We don't need it to be reactive.
+    this.perPage = 3 // Setting perPage here and not in data means it won't be reactive.
+    // We don't need it to be reactive, and this way our component has access to it.
 
     this.$store.dispatch('fetchEvents', {
       perPage: this.perPage,
@@ -36,7 +36,7 @@ export default {
       return parseInt(this.$route.query.page) || 1
     },
     isLastPage() {
-      return this.eventsTotal > this.page * this.perPage
+      return this.eventsTotal > this.page * 3
     },
     ...mapState(['events', 'eventsTotal'])
   }
