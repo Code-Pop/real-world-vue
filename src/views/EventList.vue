@@ -5,12 +5,10 @@
     <template v-if="page != 1">
       <router-link :to="{ name: 'event-list', query: { page: page - 1 } }" rel="prev">
       Prev Page</router-link>
-      <template v-if="isLastPage"> | </template>
+      <template v-if="hasNextPage"> | </template>
     </template>
-    <template v-if="isLastPage">
-      <router-link :to="{ name: 'event-list', query: { page: page + 1 } }" rel="next">
+    <router-link v-if="hasNextPage" :to="{ name: 'event-list', query: { page: page + 1 } }" rel="next">
       Next Page</router-link>
-    </template>
   </div>
 </template>
 
@@ -35,7 +33,7 @@ export default {
     page() {
       return parseInt(this.$route.query.page) || 1
     },
-    isLastPage() {
+    hasNextPage() {
       return this.eventsTotal > this.page * 3
     },
     ...mapState(['events', 'eventsTotal'])
