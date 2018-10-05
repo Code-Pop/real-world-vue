@@ -34,7 +34,7 @@ export default {
       return parseInt(this.$route.query.page) || 1
     },
     hasNextPage() {
-      return this.eventsTotal > this.page * 3
+      return this.eventsTotal > this.page * this.perPage
     },
     ...mapState(['events', 'eventsTotal'])
   }
