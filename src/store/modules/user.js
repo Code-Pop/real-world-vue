@@ -1,6 +1,6 @@
 export const state = {
-  id: null,
-  name: null
+  id: 'abc123',
+  name: 'Adam'
 }
 
 // export default {
