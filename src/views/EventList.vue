@@ -24,7 +24,7 @@ export default {
     this.perPage = 3 // Setting perPage here and not in data means it won't be reactive.
     // We don't need it to be reactive, and this way our component has access to it.
 
-    this.$store.dispatch('fetchEvents', {
+    this.$store.dispatch('event/fetchEvents', {
       perPage: this.perPage,
       page: this.page
     })
