@@ -17,6 +17,7 @@ We encourage you to follow the course on Vue Mastery, and code along with us. Th
 | 11 - Vuex State & Getters            | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson11-vuex-start)                 | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson11-vuex-finish)                 |
 | 12 - Vuex Mutations & Actions Part 1 | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson12-mutations%26actions1-start) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson12-mutations%26actions1-finish) |
 | 13 - Vuex Mutations & Actions Part 2 | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson13-mutations%26actions2-start) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson13-mutations%26actions2-finish) |
+| 13 - Vuex Modules                    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-start)              | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-finish)              |
 
 ## Project setup
 
