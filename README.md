@@ -19,6 +19,7 @@ We encourage you to follow the course on Vue Mastery, and code along with us. Th
 | 13 - Vuex Mutations & Actions Part 2 | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson13-mutations%26actions2-start) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson13-mutations%26actions2-finish) |
 | 14 - Vuex Modules                    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-start)              | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-finish)              |
 | 15 - Success & Error Notifications    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson15-notifications-start)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson15-notifications-finish)         |
+| 16 - Progress Bar: Axios Interceptors    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-start)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-axios-interceptors-finish)         |
 
 ## Project setup
 
