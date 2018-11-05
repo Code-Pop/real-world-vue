@@ -27,7 +27,8 @@ const router = new Router({
       component: EventShow,
       props: true,
       beforeEnter(routeTo, routeFrom, next) {
-        store.dispatch('event/fetchEvent', routeTo.params.id).then(() => {
+        store.dispatch('event/fetchEvent', routeTo.params.id).then(event => {
+          routeTo.params.event = event
           next()
         })
       }
