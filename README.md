@@ -61,27 +61,3 @@ To run the mock database
 | Progress Bar: In-Component Route Guards   | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progressbar-in-component-route-guard-finish) |
 | Progress Bar: Global and Per-Route Guards | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-global-guard)                   |
 | Completing our Progress Bar               | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-global-guard) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-finished)                       |
-
-## Project setup
-
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
