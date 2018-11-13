@@ -43,7 +43,7 @@ To run the mock database
 | Slots                         | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson8-slots-start)           | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson8-slots-finish)           |
 | API Calls with Axios          | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson9-axios-start)           | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson9-axios-finish)           |
 
-## Mastering Vuex
+## Mastering Vuex Course
 
 | Lesson                          |                                                                                                              |                                                                                                               |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ To run the mock database
 | Vuex Modules                    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-start)              | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-finish)              |
 | Success & Error Notifications   | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson15-notifications-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson15-notifications-finish)        |
 
-## Next Level Vue
+## Next-Level Vue Course
 
 | Lesson                                    |                                                                                                    |                                                                                                                      |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
