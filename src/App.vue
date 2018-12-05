@@ -2,7 +2,7 @@
   <div id="app">
     <NavBar/>
     <NotificationContainer/>
-    <router-view :key="$route.fullPath" />
+    <router-view :key="$route.fullPath"/>
   </div>
 </template>
 
@@ -241,5 +241,8 @@ select:focus::ms-value {
 }
 select::ms-expand {
   opacity: 0;
+}
+.field {
+  margin-bottom: 24px;
 }
 </style>
