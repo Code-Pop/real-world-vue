@@ -248,4 +248,10 @@ select::ms-expand {
 .field {
   margin-bottom: 24px;
 }
+.error {
+  border: 1px solid red;
+}
+.errorMessage {
+  color: red;
+}
 </style>
