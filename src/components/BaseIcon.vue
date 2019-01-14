@@ -1,43 +1,32 @@
 <template>
-    <div class="icon-wrapper">
-      <svg class='icon' :width="width" :height="height">
-        <use v-bind="{'xlink:href':'/feather-sprite.svg#' + name}"/>
-      </svg>
-      <slot></slot>
-    </div>
+  <div>
+    <label v-if="label">{{ label }}</label>
+    <input :value="value" @input="updateValue" v-on="listeners" v-bind="$attrs">
+  </div>
 </template>
-    
+
 <script>
 export default {
-  name: 'Icon',
+  inheritAttrs: false,
   props: {
-    name: String,
-    width: {
-      type: [Number, String],
-      default: 24
+    label: {
+      type: String,
+      default: ''
     },
-    height: {
-      type: [Number, String],
-      default: 24
+    value: [String, Number]
+  },
+  computed: {
+    listeners() {
+      return {
+        ...this.$listeners,
+        input: this.updateValue
+      }
+    }
+  },
+  methods: {
+    updateValue(event) {
+      this.$emit('input', event.target.value)
     }
   }
 }
 </script>
-    
-<style scoped>
-.icon-wrapper {
-  display: inline-flex;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 1rem;
-  font-weight: 600;
-}
-.icon {
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  margin-right: 6px;
-}
-</style>
