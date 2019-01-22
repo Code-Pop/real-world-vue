@@ -9,9 +9,6 @@
 import { formFieldMixin } from '../mixins/formFieldMixin'
 export default {
   mixins: [formFieldMixin],
-  props: {
-    value: [String, Number]
-  },
   computed: {
     listeners() {
       return {

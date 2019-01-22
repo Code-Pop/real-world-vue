@@ -19,8 +19,7 @@ export default {
     options: {
       type: Array,
       required: true
-    },
-    value: [String, Number]
+    }
   }
 }
 </script>

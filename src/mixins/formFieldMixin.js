@@ -4,7 +4,8 @@ export const formFieldMixin = {
     label: {
       type: String,
       default: ''
-    }
+    },
+    value: [String, Number]
   },
   methods: {
     updateValue(event) {
