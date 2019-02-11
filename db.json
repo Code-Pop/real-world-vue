@@ -7,10 +7,7 @@
         "name": "Adam"
       },
       "category": "animal welfare",
-      "organizer": {
-        "id": "abc123",
-        "name": "Adam"
-      },
+      "organizer": "Adam",
       "title": "Cat Cabaret",
       "description": "Yay felines!",
       "location": "Meow Town",
@@ -25,10 +22,7 @@
         "name": "Adam"
       },
       "category": "animal welfare",
-      "organizer": {
-        "id": "abc123",
-        "name": "Adam"
-      },
+      "organizer": "Adam",
       "title": "Kitty Cluster",
       "description": "Yay cats!",
       "location": "Catlandia",
@@ -43,10 +37,7 @@
         "name": "Adam"
       },
       "category": "animal welfare",
-      "organizer": {
-        "id": "abc123",
-        "name": "Adam"
-      },
+      "organizer": "Adam",
       "title": "Puppy Parade",
       "description": "Yay pups!",
       "location": "Puptown ",
