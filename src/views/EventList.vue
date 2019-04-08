@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Event List</h1>
+    <h1>Event List DIT IS DE UWV BRANCHE</h1>
     <EventCard v-for="event in event.events" :key="event.id" :event="event"/>
     <template v-if="page != 1">
       <router-link :to="{ name: 'event-list', query: { page: page - 1 } }" rel="prev">
