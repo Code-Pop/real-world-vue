@@ -1,4 +1,4 @@
-# Vue Mastery Example Event App
+# Vue Mastery Example User App
 
 ## Following along?
 

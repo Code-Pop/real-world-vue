@@ -8,8 +8,8 @@ export const formFieldMixin = {
     value: [String, Number]
   },
   methods: {
-    updateValue(event) {
-      this.$emit('input', event.target.value)
+    updateValue(user) {
+      this.$emit('input', user.target.value)
     }
   }
 }
