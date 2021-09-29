@@ -4,8 +4,9 @@
     :to="{ name: 'user-show', params: { id: user.id } }"
   >
     <div class="user-card -shadow">
-      <h4 class="title">{{ user.title }}</h4></br>
-      <img :src="user.picture" /></br>
+      <h4 class="title">{{ user.title }}</h4>
+      <br />
+      <img :src="user.picture" /><br />
       <BaseIcon name="users">{{ user.location }} location</BaseIcon>
     </div>
   </router-link>

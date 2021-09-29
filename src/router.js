@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import UserCreate from './views/UserCreate.vue'
 import UserList from './views/UserList.vue'
-
+import UserGrid from './views/UserGrid.vue'
 import UserShow from './views/UserShow.vue'
 import NProgress from 'nprogress'
 import store from '@/store/store'
@@ -15,17 +15,18 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/user/list',
       name: 'user-list',
       component: UserList,
       props: true
     },
     {
       path: '/user/grid',
-      name: 'user-list-copy',
-
+      name: 'user-grid',
+      component: UserGrid,
       props: true
     },
+
     {
       path: '/user/create',
       name: 'user-create',

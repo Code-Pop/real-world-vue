@@ -3,7 +3,7 @@
     <router-link to="/" class="brand">Some users</router-link>
     <nav>
       <router-link :to="{ name: 'user-list' }">List</router-link> |
-
+      <router-link :to="{ name: 'user-grid' }">Grid</router-link> |
       <router-link :to="{ name: 'user-create' }">Create</router-link>
     </nav>
   </div>

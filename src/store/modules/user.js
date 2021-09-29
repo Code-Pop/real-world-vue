@@ -6,7 +6,7 @@ export const state = {
   users: [],
   usersTotal: 0,
   user: {},
-  perPage: 3
+  perPage: 6
 }
 
 export const mutations = {
