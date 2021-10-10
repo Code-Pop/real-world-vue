@@ -26,8 +26,8 @@ img {
   max-width: 100px;
 }
 .user-card {
-  padding: 10px;
-  margin-bottom: 14px;
+  padding: 8px;
+  margin-bottom: 6px;
   transition: all 0.2s linear;
   cursor: pointer;
 }

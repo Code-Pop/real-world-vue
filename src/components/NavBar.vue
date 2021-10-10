@@ -3,21 +3,28 @@
     <router-link to="/" class="brand">Some users</router-link>
 
     <nav>
-      <router-link :to="{ name: 'user-list' }">List</router-link> |
-      <router-link :to="{ name: 'user-grid' }">Grid</router-link> |
+      <router-link to="/" tag="button"
+        ><BaseIcon name="list"></BaseIcon
+      ></router-link>
+      &nbsp
+      <router-link to="/user/grid" tag="button"
+        ><BaseIcon name="grid"></BaseIcon
+      ></router-link>
     </nav>
   </div>
 </template>
 
 <script>
+import BaseIcon from './BaseIcon.vue'
 export default {
+  components: { BaseIcon },
   data() {
     return {
       search: '',
     }
   },
   watch: {
-    fetchUsers() {
+    search() {
       this.$store.dispatch('search', this.search)
     },
   },
@@ -35,7 +42,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  color: #39b982;
+  color: #8d0f0f;
   text-decoration: none;
 }
 .nav .nav-item {
@@ -45,7 +52,7 @@ export default {
   text-decoration: none;
 }
 .nav .nav-item.router-link-exact-active {
-  color: #39b982;
-  border-bottom: solid 2px #39b982;
+  color: #991010;
+  border-bottom: solid 2px #a50909;
 }
 </style>

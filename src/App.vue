@@ -41,7 +41,7 @@ hr {
   overflow: visible;
 }
 a {
-  color: #39b982;
+  color: #7a080e;
   font-weight: 600;
   background-color: transparent;
 }
@@ -72,7 +72,7 @@ h3 {
   font-weight: 700;
 }
 h4 {
-  font-size: 21px;
+  font-size: 17px;
   font-weight: 700;
 }
 h5 {
@@ -94,13 +94,13 @@ small {
   font-size: 20px;
 }
 .-text-primary {
-  color: #39b982;
+  color: #aa0f0f;
 }
 .-text-base {
   color: #000;
 }
 .-text-error {
-  color: tomato;
+  color: rgb(255, 71, 71);
 }
 .-text-gray {
   color: rgba(0, 0, 0, 0.5);
