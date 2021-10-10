@@ -81,7 +81,7 @@ export default {
 }
 .cell {
   flex: 0 0 32%; /* don't grow, don't shrink, width */
-  height: 150px;
+  height: 250px;
   margin-bottom: 5px;
 }
 </style>

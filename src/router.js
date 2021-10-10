@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import UserCreate from './views/UserCreate.vue'
 import UserList from './views/UserList.vue'
 import UserGrid from './views/UserGrid.vue'
 import UserShow from './views/UserShow.vue'
@@ -15,7 +14,7 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
-      path: '/user/list',
+      path: '/',
       name: 'user-list',
       component: UserList,
       props: true
@@ -27,11 +26,7 @@ const router = new Router({
       props: true
     },
 
-    {
-      path: '/user/create',
-      name: 'user-create',
-      component: UserCreate
-    },
+
     {
       path: '/user/:id',
       name: 'user-show',

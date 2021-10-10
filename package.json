@@ -1,5 +1,5 @@
 {
-  "name": "real-world-vue",
+  "name": "bojana-vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "filter": "^0.1.1",
     "lodash": "^4.17.11",
     "npm": "^7.24.1",
     "nprogress": "^0.2.0",

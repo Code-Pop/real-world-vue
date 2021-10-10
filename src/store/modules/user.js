@@ -1,12 +1,13 @@
 import UserService from '@/services/UserService.js'
-
+export const SET_SEARCH = "SET_SEARCH"
 export const namespaced = true
 
 export const state = {
   users: [],
   usersTotal: 0,
   user: {},
-  perPage: 6
+  perPage: 6,
+  search: '',
 }
 
 export const mutations = {
@@ -21,29 +22,17 @@ export const mutations = {
   },
   SET_EVENT(state, user) {
     state.user = user
+  },
+  SET_SEARCH(state, search) {
+    state.search = search
   }
 }
 
 export const actions = {
-  createUser({ commit, dispatch }, user) {
-    return UserService.postUser(user)
-      .then(() => {
-        commit('ADD_EVENT', user)
-        commit('SET_EVENT', user)
-        const notification = {
-          type: 'success',
-          message: 'Your user has been created!'
-        }
-        dispatch('notification/add', notification, { root: true })
-      })
-      .catch(error => {
-        const notification = {
-          type: 'error',
-          message: 'There was a problem creating your user: ' + error.message
-        }
-        dispatch('notification/add', notification, { root: true })
-        throw error
-      })
+
+
+  search({ commit }, search) {
+    commit('SET_SEARCH', search)
   },
   fetchUsers({ commit, dispatch, state }, { page }) {
     return UserService.getUsers(state.perPage, page)
@@ -59,7 +48,7 @@ export const actions = {
         dispatch('notification/add', notification, { root: true })
       })
   },
-  fetchUser({ commit, getters, state }, id) {
+  fetchUser({ commit, getters, state }, id,) {
     if (id == state.user.id) {
       return state.user
     }
@@ -80,5 +69,8 @@ export const actions = {
 export const getters = {
   getUserById: state => id => {
     return state.users.find(user => user.id === id)
+  },
+  getUserBySearch: state => {
+    return state.users.filter(user => user.name.toLowerCase().indexOf(state.search.toLowerCase()) > -1)
   }
 }
