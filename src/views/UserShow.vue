@@ -1,17 +1,15 @@
 <template>
   <div>
     <div class="user-header">
-      <h2 class="title">User details for:{{ user.title }}</h2>
+      <h4 class="title">User details for:{{ user.title }}</h4>
     </div>
 
-    <h2>User details:</h2>
-    <h4>User ID: {{ user.id }}</h4>
-    <h4>User name: {{ user.user.name }}</h4>
+    <h5>User details:</h5>
+    <h6>User ID: {{ user.id }}</h6>
+    <h6>User name: {{ user.user.name }}</h6>
     <img :src="user.picture" />
     <div>
-      <BaseIcon name="map">
-        <h4>Location</h4> </BaseIcon
-      ><br />
+      <BaseIcon name="map"> <h4>Location</h4> </BaseIcon><br />
       <address>{{ user.location }}</address>
     </div>
   </div>

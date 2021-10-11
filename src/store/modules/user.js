@@ -1,5 +1,4 @@
 import UserService from '@/services/UserService.js'
-export const SET_SEARCH = "SET_SEARCH"
 export const namespaced = true
 
 export const state = {
@@ -11,16 +10,16 @@ export const state = {
 }
 
 export const mutations = {
-  ADD_EVENT(state, user) {
+  ADD_USER(state, user) {
     state.users.push(user)
   },
-  SET_EVENTS(state, users) {
+  SET_USERS(state, users) {
     state.users = users
   },
-  SET_EVENTS_TOTAL(state, usersTotal) {
+  SET_USERS_TOTAL(state, usersTotal) {
     state.usersTotal = usersTotal
   },
-  SET_EVENT(state, user) {
+  SET_USER(state, user) {
     state.user = user
   },
   SET_SEARCH(state, search) {
@@ -30,15 +29,11 @@ export const mutations = {
 
 export const actions = {
 
-
-  search({ commit }, search) {
-    commit('SET_SEARCH', search)
-  },
   fetchUsers({ commit, dispatch, state }, { page }) {
     return UserService.getUsers(state.perPage, page)
       .then(response => {
-        commit('SET_EVENTS_TOTAL', parseInt(response.headers['x-total-count']))
-        commit('SET_EVENTS', response.data)
+        commit('SET_USERS_TOTAL', parseInt(response.headers['x-total-count']))
+        commit('SET_USERS', response.data)
       })
       .catch(error => {
         const notification = {
@@ -56,11 +51,11 @@ export const actions = {
     var user = getters.getUserById(id)
 
     if (user) {
-      commit('SET_EVENT', user)
+      commit('SET_USER', user)
       return user
     } else {
       return UserService.getUser(id).then(response => {
-        commit('SET_EVENT', response.data)
+        commit('SET_USER', response.data)
         return response.data
       })
     }

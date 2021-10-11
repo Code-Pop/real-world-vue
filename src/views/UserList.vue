@@ -33,7 +33,6 @@ function getPageUsers(routeTo, next) {
       'user/fetchUsers',
       {
         page: currentPage,
-        search: '',
       },
       { root: true }
     )
@@ -67,7 +66,7 @@ export default {
     hasNextPage() {
       return this.user.usersTotal > this.page * this.user.perPage
     },
-    ...mapState(['user', 'users', 'search']),
+    ...mapState(['user', 'users']),
   },
 }
 </script>

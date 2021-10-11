@@ -7,15 +7,10 @@
         "name": "Adam"
       },
       "username": "nekoja",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": "Cat Cabaret",
       "description": "Yay felines!",
       "location": "Meow Town",
-      "date": "2019-01-03T21:54:00.000Z",
-      "time": "2:00",
       "picture": "https://picsum.photos/id/237/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 8419988,
@@ -24,15 +19,10 @@
         "name": "Bojsns"
       },
       "username": "nekojaadas",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": "Kitty Cluster",
       "description": "Yay cats!",
       "location": "Catlandia",
-      "date": "2019-01-31T22:09:00.000Z",
-      "time": "7:00",
       "picture": "https://picsum.photos/id/257/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 4582797,
@@ -41,15 +31,8 @@
         "name": "Miki"
       },
       "username": "nekadadoja",
-      "category": "animal welfare",
-      "organizer": "Adam",
-      "title": "Puppy Parade",
-      "description": "Yay pups!",
       "location": "Puptown ",
-      "date": "2019-02-02T23:27:00.000Z",
-      "time": "1:00",
       "picture": "https://picsum.photos/id/267/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 59268101,
@@ -58,15 +41,9 @@
         "name": "Adam"
       },
       "username": "nekovvja",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": "Dog Cabaret",
-      "description": "Yay felines!",
       "location": "Meow Town",
-      "date": "2019-01-03T21:54:00.000Z",
-      "time": "2:00",
       "picture": "https://picsum.photos/id/237/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 59228101,
@@ -75,15 +52,10 @@
         "name": "Nina"
       },
       "username": "nekscfscsoja",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": "Cat Cabaret",
       "description": "Yay felines!",
       "location": "Meow Town",
-      "date": "2019-01-03T21:54:00.000Z",
-      "time": "2:00",
       "picture": "https://picsum.photos/id/238/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 5928101,
@@ -92,15 +64,11 @@
         "name": "Maja"
       },
       "username": "bojana",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": " Tree autmun",
-      "description": "Yay felines!",
       "location": "Meow Town",
       "date": "2019-01-03T21:54:00.000Z",
       "time": "2:00",
       "picture": "https://picsum.photos/id/239/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 592448101,
@@ -109,15 +77,9 @@
         "name": "dora"
       },
       "username": "miki",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": "Cat Cabaret",
-      "description": "Yay felines!",
       "location": "Meow Town",
-      "date": "2019-01-03T21:54:00.000Z",
-      "time": "2:00",
       "picture": "https://picsum.photos/id/227/100/50?grayscale",
-      "attendees": []
     },
     {
       "id": 59285101,
@@ -126,15 +88,10 @@
         "name": "David"
       },
       "username": "nekoja",
-      "category": "animal welfare",
-      "organizer": "Adam",
       "title": "Love and Hope",
       "description": "Yay felines!",
       "location": "Meow Town",
-      "date": "2019-01-03T21:54:00.000Z",
-      "time": "2:00",
       "picture": "https://picsum.photos/id/227/100/50?grayscale",
-      "attendees": []
     }
   ]
 }

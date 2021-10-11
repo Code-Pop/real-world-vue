@@ -1,13 +1,13 @@
 <template>
   <div id="nav" class="nav">
     <router-link to="/" class="brand">Some users</router-link>
-
+    <!-- <input v-model="search" placeholder="Search" /> -->
     <nav>
-      <router-link to="/" tag="button"
+      <router-link to="/" tag="button" class="nav-item"
         ><BaseIcon name="list"></BaseIcon
       ></router-link>
-      &nbsp
-      <router-link to="/user/grid" tag="button"
+
+      <router-link to="/user/grid" tag="button" class="nav-item"
         ><BaseIcon name="grid"></BaseIcon
       ></router-link>
     </nav>
@@ -20,13 +20,8 @@ export default {
   components: { BaseIcon },
   data() {
     return {
-      search: '',
+      user: [],
     }
-  },
-  watch: {
-    search() {
-      this.$store.dispatch('search', this.search)
-    },
   },
 }
 </script>
@@ -45,14 +40,16 @@ export default {
   color: #8d0f0f;
   text-decoration: none;
 }
+
 .nav .nav-item {
+  margin-right: 10px;
   box-sizing: border-box;
   margin: 0 5px;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 .nav .nav-item.router-link-exact-active {
-  color: #991010;
-  border-bottom: solid 2px #a50909;
+  color: #db0909;
+  border-bottom: solid 4px #e42121;
 }
 </style>
