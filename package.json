@@ -1,19 +1,24 @@
 {
-  "name": "real-world-vue",
+  "name": "bojana-vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "npm run serve",
+    "build": "npm run build",
+    "lint": "npm run lint"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "filter": "^0.1.1",
     "lodash": "^4.17.11",
+    "npm": "^7.24.1",
     "nprogress": "^0.2.0",
-    "vue": "^2.5.17",
+    "vue": "^2.6.14",
+    "vue-intellisense": "^0.3.0",
+    "vue-loader": "^15.9.8",
     "vue-router": "^3.0.1",
     "vuejs-datepicker": "^1.5.3",
+    "vuelidate": "^0.7.6",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -21,6 +26,6 @@
     "@vue/cli-plugin-eslint": "^3.0.0",
     "@vue/cli-service": "^3.0.0",
     "@vue/eslint-config-prettier": "^3.0.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.14"
   }
 }

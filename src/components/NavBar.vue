@@ -1,15 +1,29 @@
 <template>
   <div id="nav" class="nav">
-    <router-link to="/" class="brand">Real World Events</router-link>
+    <router-link to="/" class="brand">Some users</router-link>
+    <!-- <input v-model="search" placeholder="Search" /> -->
     <nav>
-      <router-link :to="{ name: 'event-list' }">List</router-link> |
-      <router-link :to="{ name: 'event-create' }">Create</router-link>
+      <router-link to="/" tag="button" class="nav-item"
+        ><BaseIcon name="list"></BaseIcon
+      ></router-link>
+
+      <router-link to="/user/grid" tag="button" class="nav-item"
+        ><BaseIcon name="grid"></BaseIcon
+      ></router-link>
     </nav>
   </div>
 </template>
 
 <script>
-export default {}
+import BaseIcon from './BaseIcon.vue'
+export default {
+  components: { BaseIcon },
+  data() {
+    return {
+      user: [],
+    }
+  },
+}
 </script>
 
 <style scoped>
@@ -23,17 +37,19 @@ export default {}
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  color: #39b982;
+  color: #8d0f0f;
   text-decoration: none;
 }
+
 .nav .nav-item {
+  margin-right: 10px;
   box-sizing: border-box;
   margin: 0 5px;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 .nav .nav-item.router-link-exact-active {
-  color: #39b982;
-  border-bottom: solid 2px #39b982;
+  color: #db0909;
+  border-bottom: solid 4px #e42121;
 }
 </style>

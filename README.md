@@ -1,70 +1,123 @@
-# Vue Mastery Example Event App
+# real-world-vue
 
-## Following along?
+npm run serve
+npm run build
+npm run lint
+<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
-We encourage you to follow the course on Vue Mastery, and code along with us. This course has tags representing the start and finish of each lesson, just in case you get stuck.
+<p align="center">
+  <a href="https://circleci.com/gh/vuejs/vue/tree/dev"><img src="https://img.shields.io/circleci/project/github/vuejs/vue/dev.svg?sanitize=true" alt="Build Status"></a>
+  <a href="https://codecov.io/github/vuejs/vue?branch=dev"><img src="https://img.shields.io/codecov/c/github/vuejs/vue/dev.svg?sanitize=true" alt="Coverage Status"></a>
+  <a href="https://npmcharts.com/compare/vue?minimal=true"><img src="https://img.shields.io/npm/dm/vue.svg?sanitize=true" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/v/vue.svg?sanitize=true" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/l/vue.svg?sanitize=true" alt="License"></a>
+  <a href="https://chat.vuejs.org/"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg?sanitize=true" alt="Chat"></a>
+</p>
 
-Here are the commands you’ll want handy once you have it installed. I’m assuming you already have npm installed.
+## This repo is for Vue 2
 
-To install dependencies:
+You are looking at the repository for Vue 2. The repo for Vue 3 is [vuejs/core](https://github.com/vuejs/core).
 
-```
-    $ npm install
-```
+## Sponsors
 
-To run the server:
+Vue.js is an MIT-licensed open source project with its ongoing development made possible entirely by the support of these awesome [backers](https://github.com/vuejs/core/blob/main/BACKERS.md). If you'd like to join them, please consider [ sponsor Vue's development](https://vuejs.org/sponsor/).
 
-```
-    $ npm run serve
-```
+<p align="center">
+  <h3 align="center">Special Sponsor</h3>
+</p>
 
-To get json-server, which we use for our mock database (Starting on API calls with Axios)
+<p align="center">
+  <a target="_blank" href="https://github.com/appwrite/appwrite">
+  <img alt="special sponsor appwrite" src="https://sponsors.vuejs.org/images/appwrite.svg" width="300">
+  </a>
+</p>
 
-```
-    $ npm install -g json-server
-```
+<p align="center">
+  <a target="_blank" href="https://vuejs.org/sponsor/">
+    <img alt="sponsors" src="https://sponsors.vuejs.org/sponsors.svg?v2">
+  </a>
+</p>
 
-To run the mock database
+---
 
-```
-    $ json-server --watch db.json
-```
+## Introduction
 
-## Real World Vue Course
+Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases. It consists of an approachable core library that focuses on the view layer only, and an ecosystem of supporting libraries that helps you tackle complexity in large Single-Page Applications.
 
-| Lesson                        |                                                                                                        |                                                                                                         |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Vue CLI                       | n/a                                                                                                    | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson2-cli-finish)             |
-| Optimizing your IDE           | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson3-editor-start)          | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson3-editor-finish)          |
-| Vue Router Basics             | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson4-routing-start)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson4-routing-finish)         |
-| Dynamic Routes & History Mode | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson5-dynamic-routing-start) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson5-dynamic-routing-finish) |
-| Single File Components        | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson6-sfc-start)             | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson6-sfc-finish)             |
-| Global Components             | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson7-global-start)          | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson7-global-finish)          |
-| Slots                         | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson8-slots-start)           | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson8-slots-finish)           |
-| API Calls with Axios          | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson9-axios-start)           | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson9-axios-finish)           |
+#### Browser Compatibility
 
-## Mastering Vuex Course
+Vue.js supports all browsers that are [ES5-compliant](https://kangax.github.io/compat-table/es5/) (IE8 and below are not supported).
 
-| Lesson                          |                                                                                                              |                                                                                                               |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| Vuex State & Getters            | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson11-vuex-start)                 | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson11-vuex-finish)                 |
-| Vuex Mutations & Actions Part 1 | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson12-mutations%26actions1-start) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson12-mutations%26actions1-finish) |
-| Vuex Mutations & Actions Part 2 | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson13-mutations%26actions2-start) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson13-mutations%26actions2-finish) |
-| Vuex Modules                    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-start)              | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson14-modules-finish)              |
-| Success & Error Notifications   | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson15-notifications-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/lesson15-notifications-finish)        |
+## Ecosystem
 
-## Next-Level Vue Course
+| Project               | Status                                                       | Description                                             |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------- |
+| [vue-router]          | [![vue-router-status]][vue-router-package]                   | Single-page application routing                         |
+| [vuex]                | [![vuex-status]][vuex-package]                               | Large-scale state management                            |
+| [vue-cli]             | [![vue-cli-status]][vue-cli-package]                         | Project scaffolding                                     |
+| [vue-loader]          | [![vue-loader-status]][vue-loader-package]                   | Single File Component (`*.vue` file) loader for webpack |
+| [vue-server-renderer] | [![vue-server-renderer-status]][vue-server-renderer-package] | Server-side rendering support                           |
+| [vue-class-component] | [![vue-class-component-status]][vue-class-component-package] | TypeScript decorator for a class-based API              |
+| [vue-rx]              | [![vue-rx-status]][vue-rx-package]                           | RxJS integration                                        |
+| [vue-devtools]        | [![vue-devtools-status]][vue-devtools-package]               | Browser DevTools extension                              |
 
-| Lesson                                    |                                                                                                    |                                                                                                                      |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Progress Bar: Axios Interceptors          | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-axios-interceptors-finish)      |
-| Progress Bar: In-Component Route Guards   | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progressbar-in-component-route-guard-finish) |
-| Progress Bar: Global and Per-Route Guards | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-start)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-global-guard)                   |
-| Completing our Progress Bar               | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-global-guard) | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/progress-bar-finished)                       |
-| Reusable Form Components: BaseInput       | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/error-handling-finish)     | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/BaseInput-finish)                            |
-| Reusable Form Components: BaseSelect      | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/BaseInput-finish)          | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseSelect-finish)                           |
-| Reusable Form Components: BaseButton      | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseSelect-finish)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseButton-finish)                           |
-| Form Validation with Vuelidate            | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseButton-finish)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/form_validation1_finish)                     |
-| Form Validation with Vuelidate pt 2       | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/form_validation1_finish)   | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/vuelidateP2-finish)                          |
-| Mixins                                    | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/vuelidateP2-finish)        | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/mixins_finish)                               |
-| Filters                                   | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/mixins_finish)             | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/filters_finish)                              |
+[vue-router]: https://github.com/vuejs/vue-router
+[vuex]: https://github.com/vuejs/vuex
+[vue-cli]: https://github.com/vuejs/vue-cli
+[vue-loader]: https://github.com/vuejs/vue-loader
+[vue-server-renderer]: https://github.com/vuejs/vue/tree/dev/packages/vue-server-renderer
+[vue-class-component]: https://github.com/vuejs/vue-class-component
+[vue-rx]: https://github.com/vuejs/vue-rx
+[vue-devtools]: https://github.com/vuejs/vue-devtools
+[vue-router-status]: https://img.shields.io/npm/v/vue-router.svg
+[vuex-status]: https://img.shields.io/npm/v/vuex.svg
+[vue-cli-status]: https://img.shields.io/npm/v/@vue/cli.svg
+[vue-loader-status]: https://img.shields.io/npm/v/vue-loader.svg
+[vue-server-renderer-status]: https://img.shields.io/npm/v/vue-server-renderer.svg
+[vue-class-component-status]: https://img.shields.io/npm/v/vue-class-component.svg
+[vue-rx-status]: https://img.shields.io/npm/v/vue-rx.svg
+[vue-devtools-status]: https://img.shields.io/chrome-web-store/v/nhdogjmejiglipccpnnnanhbledajbpd.svg
+[vue-router-package]: https://npmjs.com/package/vue-router
+[vuex-package]: https://npmjs.com/package/vuex
+[vue-cli-package]: https://npmjs.com/package/@vue/cli
+[vue-loader-package]: https://npmjs.com/package/vue-loader
+[vue-server-renderer-package]: https://npmjs.com/package/vue-server-renderer
+[vue-class-component-package]: https://npmjs.com/package/vue-class-component
+[vue-rx-package]: https://npmjs.com/package/vue-rx
+[vue-devtools-package]: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
+
+## Documentation
+
+To check out [live examples](https://v2.vuejs.org/v2/examples/) and docs, visit [vuejs.org](https://v2.vuejs.org).
+
+## Questions
+
+For questions and support please use [the official forum](https://forum.vuejs.org) or [community chat](https://chat.vuejs.org/). The issue list of this repo is **exclusively** for bug reports and feature requests.
+
+## Issues
+
+Please make sure to read the [Issue Reporting Checklist](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md#issue-reporting-guidelines) before opening an issue. Issues not conforming to the guidelines may be closed immediately.
+
+## Changelog
+
+Detailed changes for each release are documented in the [release notes](https://github.com/vuejs/vue/releases).
+
+## Stay In Touch
+
+- [Twitter](https://twitter.com/vuejs)
+- [Blog](https://medium.com/the-vue-point)
+- [Job Board](https://vuejobs.com/?ref=vuejs)
+
+## Contribution
+
+Please make sure to read the [Contributing Guide](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md) before making a pull request. If you have a Vue-related project/component/tool, add it with a pull request to [this curated list](https://github.com/vuejs/awesome-vue)!
+
+Thank you to all the people who already contributed to Vue!
+
+<a href="https://github.com/vuejs/vue/graphs/contributors"><img src="https://opencollective.com/vuejs/contributors.svg?width=890" /></a>
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2013-present, Yuxi (Evan) You
